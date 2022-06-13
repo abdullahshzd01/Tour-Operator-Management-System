@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UI">
+   <children>
+      <AnchorPane layoutX="-11.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="1000.0" layoutX="15.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@b2.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="356.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Clients">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="206.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Client CNIC">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="del_client_id" layoutX="356.0" layoutY="169.0" />
+            <Button layoutX="566.0" layoutY="246.0" mnemonicParsing="false" onAction="#DeleteClient" text="Delete Client" />
+            <Text layoutX="408.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button layoutX="75.0" layoutY="468.0" mnemonicParsing="false" onAction="#switchToManageClients" text="prev" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

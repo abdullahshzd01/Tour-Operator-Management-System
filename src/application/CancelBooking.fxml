@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UI">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="1000.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@b2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../bin/16602612.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="317.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel Booking" AnchorPane.bottomAnchor="539.2197265625" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="422.314453125" AnchorPane.topAnchor="69.5478515625">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font></Text>
+            <Button layoutX="399.0" layoutY="279.0" mnemonicParsing="false" onAction="#MakeBookingCancelation" prefHeight="25.0" prefWidth="152.0" text="Proceed Cancelation" />
+            <Button layoutX="26.0" layoutY="486.0" mnemonicParsing="false" onAction="#switchToBookingOptions" text="Prev" />
+            <Text layoutX="306.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking ID" />
+            <TextField fx:id="cancelBookingID" layoutX="400.0" layoutY="211.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
