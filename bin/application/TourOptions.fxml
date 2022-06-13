@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UI">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="1000.0" fitWidth="1000.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@b2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../bin/16602612.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="324.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOUR OPTIONS" AnchorPane.bottomAnchor="535.2197265625" AnchorPane.leftAnchor="324.0" AnchorPane.rightAnchor="416.20849609375" AnchorPane.topAnchor="73.5478515625">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font></Text>
+            <Button layoutX="362.0" layoutY="167.0" mnemonicParsing="false" onAction="#switchToAddTour" prefHeight="25.0" prefWidth="152.0" text="Add Tour" />
+            <Button layoutX="362.0" layoutY="219.0" mnemonicParsing="false" onAction="#switchToDeleteTourDetails" prefHeight="25.0" prefWidth="152.0" text="Delete Tour" />
+            <Button layoutX="362.0" layoutY="281.0" mnemonicParsing="false" onAction="#switchToEditTourDetails" prefHeight="25.0" prefWidth="152.0" text="Update Tour" />
+            <Button layoutX="26.0" layoutY="486.0" mnemonicParsing="false" onAction="#switchToFrontPage" text="Prev" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
